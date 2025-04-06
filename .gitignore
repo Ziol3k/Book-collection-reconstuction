@@ -1,0 +1,35 @@
+# Wykluczenie środowisk Conda
+*.conda
+*.env
+*.venv
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.log
+
+# Wykluczenie notebooków tymczasowych
+.ipynb_checkpoints/
+
+# Wykluczenie katalogów PyCharma
+.idea/
+*.iml
+
+# Wykluczenie plików generowanych przez system
+.DS_Store
+Thumbs.db
+
+# Wykluczenie plików Jupytera
+.jupyter/
+.anaconda/
+anaconda_projects/
+
+# Wykluczenie plików logów i wynikowych
+*.log
+*.out
+*.err
+
+# Pliki tymczasowe systemowe
+*.swp
+*.swo
+~$*
