@@ -33,3 +33,12 @@ anaconda_projects/
 *.swp
 *.swo
 ~$*
+
+# Wykluczenie folderów z dużymi danymi
+Handwriting_model/data/raw/
+Handwriting_model/data/processed/
+Handwriting_model/data/train/
+Handwriting_model/data/test/
+Handwriting_model/data/val/
+
+*.tgz
