@@ -2,7 +2,7 @@ from PIL import Image
 import os
 
 # Ścieżki do folderów
-input_folder = "../data/raw/lines/"
+input_folder = "../data/filtered/lines/"
 output_folder = "../data/processed/lines/"
 
 # Tworzenie folderu docelowego
