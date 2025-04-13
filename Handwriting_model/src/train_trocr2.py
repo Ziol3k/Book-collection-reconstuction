@@ -19,7 +19,7 @@ if __name__ == '__main__':
 
     # Dataset
     class IAMDataset(Dataset):
-        def __init__(self, image_folder, labels, step=4):  # Domyślnie co 4 próbka
+        def __init__(self, image_folder, labels, step=4):
             self.image_folder = image_folder
             self.image_files = [f for i, f in enumerate(os.listdir(image_folder)) if
                                 f.endswith(".png") and i % step == 0]
@@ -47,8 +47,8 @@ if __name__ == '__main__':
         return images, labels
 
 
-    # Tworzenie zestawów danych z filtrowaniem co n-ty przykład
-    step = 1  # Filtrowanie co czwarte zdjęcie
+
+    step = 1
     train_dataset = IAMDataset(train_folder, labels, step=step)
     val_dataset = IAMDataset(val_folder, labels, step=step)
 
@@ -82,7 +82,7 @@ if __name__ == '__main__':
             labels = labels.to(device)
 
             optimizer.zero_grad()
-            with autocast(device_type='cuda'):  # Użycie mieszanej precyzji
+            with autocast(device_type='cuda'):
                 outputs = model(pixel_values=images, labels=labels)
                 loss = outputs.loss
 

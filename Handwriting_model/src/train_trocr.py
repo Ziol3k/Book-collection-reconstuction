@@ -44,8 +44,8 @@ if __name__ == '__main__':
         labels = processor.tokenizer(list(labels), return_tensors="pt", padding=True, truncation=True).input_ids
         return images, labels
 
-    # Tworzenie zestawów danych z filtrowaniem co n-ty przykład
-    step = 8  # Możesz zmienić tę wartość, np. na 4 dla co czwartego zdjęcia
+
+    step = 8
     train_dataset = IAMDataset(train_folder, labels, step=step)
     val_dataset = IAMDataset(val_folder, labels, step=step)
 

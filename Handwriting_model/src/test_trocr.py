@@ -32,14 +32,14 @@ def collate_fn_test(batch):
 
 # Ścieżki do folderów i danych testowych
 test_folder = "data/test/lines/"  # Folder z obrazami do testów
-labels_path = os.path.abspath("data/processed/labels.json")  # Plik z etykietami testowymi
+labels_path = os.path.abspath("data/processed/labels.json")
 
 # Załadowanie etykiet testowych
 with open(labels_path, "r") as f:
     test_labels = json.load(f)
 
 # Załaduj model i procesor
-model_path = "../models/trocr_epoch_3"  # Ścieżka do wytrenowanego modelu (np. ostatnia epoka)
+model_path = "../models/trocr_epoch_3"
 processor = TrOCRProcessor.from_pretrained(model_path)
 model = VisionEncoderDecoderModel.from_pretrained(model_path)
 
@@ -54,8 +54,8 @@ model.to(device)
 # Funkcja testowania modelu
 def test_model(model, dataloader, processor, device, output_file="test_results2.txt"):
     model.eval()
-    total_loss = 0  # Całkowity loss dla danych testowych
-    num_batches = 0  # Licznik batchy
+    total_loss = 0
+    num_batches = 0
 
     with torch.no_grad():
         with open(output_file, "w") as result_file:
