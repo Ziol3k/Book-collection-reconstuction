@@ -1,3 +1,4 @@
+# train_trocr2.py
 if __name__ == '__main__':
     import os
     import torch
@@ -5,7 +6,7 @@ if __name__ == '__main__':
     from torch.utils.data import Dataset, DataLoader
     from PIL import Image
     import json
-    from torch.amp import GradScaler, autocast  # Zaktualizowane moduły
+    from torch.amp import GradScaler, autocast
 
     # Ścieżki do folderów
     train_folder = "data/train/lines/"

@@ -1,3 +1,4 @@
+# test_trocr.py
 import os
 import torch
 from transformers import TrOCRProcessor, VisionEncoderDecoderModel

@@ -1,3 +1,4 @@
+# train_trocr.py
 if __name__ == '__main__':
     import os
     import torch
