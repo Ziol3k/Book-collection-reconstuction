@@ -9,5 +9,5 @@ Opracowanie prototypu metod/narzędzi opartych na sztucznej inteligencji do reko
 - Python
 
 ## Opis:
-Metoda rekonstrukcji jest szczegółowo opisana w rozprawie doktorskiej autorstwa Pani dr. żanety Kubic.
+Metoda rekonstrukcji jest szczegółowo opisana w rozprawie doktorskiej autorstwa Pani dr. Żanety Kubic.
 W ramach projektu konieczne jest rozważenie, które kroki i za pomocą których metod/technik AI można obecnie zautoatyzować, a następnie przeprowadzenie pilotażowej implementacji, powtarzając kroki wykonywane dotychczas ręcznie na podstawie przykładów z ww. rozprawy
